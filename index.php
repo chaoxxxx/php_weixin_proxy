@@ -1,7 +1,7 @@
 <?php
 function is_HTTPS()
 {
-    if (!isset($_SERVER['HTTPS'])) return FALSE;
+    if (!isset($_SERVER['HTTPS'])) return false;
     if ($_SERVER['HTTPS'] === 1) {  //Apache
         return TRUE;
     } elseif ($_SERVER['HTTPS'] === 'on') { //IIS
